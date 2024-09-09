@@ -1,0 +1,33 @@
+.Breadcrumbs {
+    width: 126px;
+    height: 16.89px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    padding-top: 70px;
+
+
+}
+.Breadcrumbs ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Выстраиваем элементы в строку */
+    color: #C4D2E3;
+
+}
+
+.Breadcrumbs li {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+
+}
+
+.Breadcrumbs a {
+    color: #C4D2E3;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+

@@ -1,0 +1,37 @@
+
+.Container {
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.navigation {
+    width: 100%;
+    max-width: 521px;
+    max-height: 22px;
+    padding-left: 222px;
+}
+
+.navigationList {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigationItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+
+
+}
+
+.navigationItem:last-child {
+    margin-right: 0;
+}

@@ -1,7 +1,22 @@
 .Background {
     background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
+
     min-height: 100vh;
     color: white;
     font-family: "Fira Sans Condensed", sans-serif;
 
+}
+.Container{
+    max-width: 1240px;
+    width: 100%;
+    padding-left: 340px;
+    padding-right: 340px;
+}
+
+/* Чтобы отступы не были больше чем нужно на меньших экранах */
+@media (max-width: 1920px) {
+    .Container{
+        padding-left: calc((100vw - 1240px) / 2);
+        padding-right: calc((100vw - 1240px) / 2);
+    }
 }

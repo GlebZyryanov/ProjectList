@@ -4,11 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: start;
-
+    width: 100%;
 }
 
 .navigation {
-    width: 100%;
+
     max-width: 521px;
     max-height: 22px;
     padding-left: 222px;
@@ -16,15 +16,24 @@
 
 .navigationList {
     display: flex;
+
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
+@media (max-width: 768px) {
+    .navigationList {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
 .navigationItem {
+
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
     font-weight: 400;
     line-height: 21.6px;
     text-align: left;
@@ -34,4 +43,10 @@
 
 .navigationItem:last-child {
     margin-right: 0;
+}
+
+svg {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
 }

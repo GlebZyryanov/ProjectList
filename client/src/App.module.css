@@ -9,8 +9,10 @@
 .Container{
     max-width: 1240px;
     width: 100%;
-    padding-left: 340px;
-    padding-right: 340px;
+    padding-left: 5%; /* гибкий отступ */
+    padding-right: 5%; /* гибкий отступ */
+    margin: 0 auto;
+
 }
 
 /* Чтобы отступы не были больше чем нужно на меньших экранах */
@@ -18,5 +20,11 @@
     .Container{
         padding-left: calc((100vw - 1240px) / 2);
         padding-right: calc((100vw - 1240px) / 2);
+    }
+}
+/* Адаптивная настройка для более узких экранов */
+@media (max-width: 768px) {
+    .Container {
+        padding: 0 10px; /* Уменьшаем боковые отступы на мобильных устройствах */
     }
 }

@@ -13,8 +13,9 @@ function App() {
           <BreadCrumbs/>
           <Projects/>
           <FeedbackForm/>
-          <Footer/>
+
       </div>
+        <Footer/>
     </div>
   );
 }

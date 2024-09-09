@@ -1,0 +1,170 @@
+
+.Container{
+    margin-top: 170px;
+    max-height: 639px;
+    height: 100vh;
+    position: relative;
+
+}
+@media (max-width: 768px)  {
+    .Container{
+        padding: 20px;
+        margin-top:230%;
+    }
+}
+
+.Title{
+    width: 361px;
+    height: 116px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    text-align: left;
+    display: block;
+
+
+}
+@media (max-width: 768px) {
+    .Title {
+        font-size: 32px;
+        line-height: 38.4px;
+        text-align: center;
+    }
+}
+.Forms{
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+@media (max-width: 768px) {
+    .Forms {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+.Subtract{
+    margin-top: 90px;
+    width: 387px;
+    height: 61px;
+    position: relative;
+    background: #2B2C38;
+}
+@media (max-width: 768px) {
+    .Subtract {
+        width: 100%;
+        height: auto;
+    }
+}
+.Forms > .Subtract:last-child {
+    width: 1240px; /* Фиксированная ширина */
+    height: 139px; /* Фиксированная высота */
+    flex-grow: 0; /* Убираем растяжение */
+}
+
+.Subtitle{
+    padding: 5px 10px;
+    height: 27px;
+    position: absolute;
+    top: -15px;
+    left: 24px;
+    gap: 0;
+    z-index: 1;
+    background: #2B2C38;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.6px;
+    text-align: center;
+
+
+
+}
+@media (max-width: 768px) {
+    .Subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        width: auto;
+    }
+}
+.Input{
+    /*width: 387px;*/
+    /*height: 61px;*/
+    width: 100%; /* Растягивается на всю ширину родителя */
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    border: 1.5px solid #9AA8BA;
+    background: #2B2C38;
+    color: white;
+    padding-left: 10px;
+
+}
+
+
+.Input:focus {
+    outline: none;
+}
+
+.CheckboxContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.CheckboxInput {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid #EFF3FF;
+    background: #2B2C38;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+.CheckboxInput:checked {
+    background: #9AA8BA;
+}
+
+.CheckboxInput:checked::before {
+    content: '';
+    display: block;
+    background-color: #2B2C38;
+
+}
+
+.CheckboxLabel {
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.6px;
+    text-align: left;
+
+
+}
+.Button{
+    width: 259px;
+    position: absolute;
+    height: 62px;
+    top: 577px;
+    left: 472px;
+    padding: 20px 45px 20px 45px;
+    gap: 10px;
+    border-radius: 85px;
+    background: #2D76F9;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+
+
+
+}
+@media (max-width: 768px) {
+    .Button {
+        width: 100%; /* Кнопка занимает всю ширину экрана */
+    }
+}

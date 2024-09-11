@@ -1,18 +1,23 @@
 
 .Container{
-    margin-top: 170px;
-    max-height: 639px;
-    height: 100vh;
+    margin-top: 5%;
+    /* height: 100vh; */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 
 }
 @media (max-width: 768px)  {
     .Container{
         padding: 20px;
-        margin-top:230%;
     }
 }
-
+.TitleContainer{
+    display: flex;
+    width: 100%
+}
 .Title{
     width: 361px;
     height: 116px;
@@ -23,31 +28,38 @@
     display: block;
 
 
+
 }
 @media (max-width: 768px) {
     .Title {
         font-size: 32px;
         line-height: 38.4px;
-        text-align: center;
+
     }
 }
 .Forms{
 display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
-
+    gap: 20px;
 }
 @media (max-width: 768px) {
     .Forms {
         flex-direction: column;
+        justify-content: space-between;
         gap: 10px;
+        width: 100%;
 
     }
 }
+.SubtractContainer{
+    width: 100%;
+}
 .Subtract{
-    margin-top: 90px;
-    width: 387px;
+    margin-top: 5%;
+    max-width: 360px;
+    width: 30%;
     height: 61px;
     position: relative;
     background: #2B2C38;
@@ -55,12 +67,15 @@ display: flex;
 @media (max-width: 768px) {
     .Subtract {
         width: 100%;
-        height: auto;
+        max-width: 1240px;
+        height: 50px;
+
     }
 }
 .Forms > .Subtract:last-child {
-    width: 1240px; /* Фиксированная ширина */
-    height: 139px; /* Фиксированная высота */
+    max-width: 1240px;
+    width: 100%;
+    height: 139px;
     flex-grow: 0; /* Убираем растяжение */
 }
 
@@ -110,7 +125,7 @@ display: flex;
 .CheckboxContainer {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 5%;
 
 }
 .CheckboxInput {
@@ -145,13 +160,14 @@ display: flex;
 
 }
 .Button{
+    margin-top: 5%;
     width: 259px;
-    position: absolute;
+    /*position: absolute;*/
     height: 62px;
-    top: 577px;
-    left: 472px;
-    padding: 20px 45px 20px 45px;
-    gap: 10px;
+    /*top: 577px;*/
+    /*left: 472px;*/
+    /*padding: 20px 45px 20px 45px;*/
+    /*gap: 10px;*/
     border-radius: 85px;
     background: #2D76F9;
     color: #FFFFFF;
@@ -167,4 +183,10 @@ display: flex;
     .Button {
         width: 100%; /* Кнопка занимает всю ширину экрана */
     }
+}
+
+.Error{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
 }

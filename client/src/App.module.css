@@ -6,25 +6,34 @@
     font-family: "Fira Sans Condensed", sans-serif;
 
 }
-.Container{
+.Container {
     max-width: 1240px;
-    width: 100%;
-    padding-left: 5%; /* гибкий отступ */
-    padding-right: 5%; /* гибкий отступ */
-    margin: 0 auto;
-
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
-/* Чтобы отступы не были больше чем нужно на меньших экранах */
+/* Для больших экранов (1920px) */
 @media (max-width: 1920px) {
-    .Container{
-        padding-left: calc((100vw - 1240px) / 2);
-        padding-right: calc((100vw - 1240px) / 2);
-    }
-}
-/* Адаптивная настройка для более узких экранов */
-@media (max-width: 768px) {
     .Container {
-        padding: 0 10px; /* Уменьшаем боковые отступы на мобильных устройствах */
+        max-width: 1240px;
+        padding-left: 17%;
+        padding-right: 17%;
     }
 }
+@media (max-width: 960px) {
+    .Container {
+        max-width: 1240px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+/* Для экранов меньше (1920px) */
+@media (max-width: 768px) {
+    .Container{
+        /*padding-left: calc((100vw - 1240px) / 2);*/
+        /*padding-right: calc((100vw - 1240px) / 2);*/
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+

@@ -1,18 +1,38 @@
 
 .Container {
-    padding-top: 64px;
     display: flex;
-    align-items: center;
+    align-items: start;
+    text-align: center;
     justify-content: start;
     width: 100%;
+    max-height: 36px;
+    margin: 0 auto;
+    padding: 64px 20px 20px 0;
+    border: 2px solid #ffffff;
+}
+
+.menuExpanded {
+    width: 100%;
+    height: 812px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-color: #fff;*/
+    z-index: 9999;
 }
 
 .navigation {
-
+    display: flex;
+    align-items: center;
     max-width: 521px;
     max-height: 22px;
-    padding-left: 222px;
+    /*padding-left: 5%;*/
+    padding-right: 15px;
 }
+
 
 .navigationList {
     display: flex;
@@ -22,13 +42,7 @@
     padding: 0;
     margin: 0;
 }
-@media (max-width: 768px) {
-    .navigationList {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
+
 .navigationItem {
 
     margin-right: 20px;
@@ -44,9 +58,62 @@
 .navigationItem:last-child {
     margin-right: 0;
 }
-
-svg {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
+.Logo{
+    min-width: 150px;
 }
+.mobileMenuButton {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    height: 32px;
+    width: 32px;
+
+}
+.mobileMenuButton:hover {
+    cursor: pointer;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .Container {
+        justify-content: space-between;
+    }
+    .navigation {
+        display: none; /* скрываем меню */
+        /*flex-direction: column;*/
+        /*align-items: flex-start;*/
+    }
+
+    .navigationOpen {
+        display: block;
+    }
+    /*display: flex;*/
+    /*    align-items: start;*/
+    /*    justify-content:start;*/
+    /*    max-width: 968px;*/
+    /*    width: 100%;*/
+    /*    max-height: 812px;*/
+    /*    text-align: start;*/
+    /*    !*margin-left: calc((100vw - 1240px) / 2);*!*/
+    /*    !*margin-right: calc((100vw - 1240px) / 2);*!*/
+    /*    z-index: 1;*/
+    /*}*/
+
+    .navigationList {
+        flex-direction: column;
+    }
+
+    .mobileMenuButton {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .Logo {
+        max-width: 100px;
+    }
+
+    }

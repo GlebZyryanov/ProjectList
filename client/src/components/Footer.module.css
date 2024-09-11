@@ -1,17 +1,41 @@
 .Footer {
-    margin-top: 150px;
+    margin-top: 5%;
     padding: 40px 0;
     background: #313341;
     color: #fff;
+}
+.SubFooter{
+    max-width: 1240px;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+/* Для больших экранов (1920px) */
+@media (max-width: 1920px) {
+    .SubFooter {
+        max-width: 1240px;
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+}
+@media (max-width: 960px) {
+    .SubFooter {
+        max-width: 1240px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+/* Для экранов меньше (1920px) */
+@media (max-width: 768px) {
+    .SubFooter{
+
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 }
 
 .Container {
     display: flex;
     justify-content: flex-start;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 30px;
 }
 
 .Column {

@@ -1,38 +1,34 @@
 .Background {
-    background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
+  background: linear-gradient(180deg, #24252f 0%, #31313f 36.46%, #242530 100%);
 
-    min-height: 100vh;
-    color: white;
-    font-family: "Fira Sans Condensed", sans-serif;
-
+  min-height: 100vh;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 .Container {
+  max-width: 1240px;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+
+@media (max-width: 1920px) {
+  .Container {
     max-width: 1240px;
     padding-left: 17%;
     padding-right: 17%;
-}
-
-
-@media (max-width: 1920px) {
-    .Container {
-        max-width: 1240px;
-        padding-left: 17%;
-        padding-right: 17%;
-    }
+  }
 }
 @media (max-width: 960px) {
-    .Container {
-        max-width: 1240px;
-        padding-left: 7%;
-        padding-right: 7%;
-    }
+  .Container {
+    max-width: 1240px;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 }
 
 @media (max-width: 768px) {
-    .Container{
-
-        padding-left: 1%;
-        padding-right: 1%;
-    }
+  .Container {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
-

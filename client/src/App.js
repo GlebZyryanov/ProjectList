@@ -9,13 +9,12 @@ function App() {
   return (
     <div className={styles.Background}>
       <div className={styles.Container}>
-          <Header/>
-          <BreadCrumbs/>
-          <Projects/>
-          <FeedbackForm/>
-
+        <Header />
+        <BreadCrumbs />
+        <Projects />
+        <FeedbackForm />
       </div>
-        <Footer/>
+      <Footer />
     </div>
   );
 }

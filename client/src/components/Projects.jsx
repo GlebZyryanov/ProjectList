@@ -81,8 +81,8 @@ const Projects = () => {
   }
 
   return (
-    <div className={styles.Container}>
-      <div className={styles.Title}>Кейсы</div>
+    <section className={styles.Container}>
+      <h1 className={styles.Title}>Кейсы</h1>
 
       <div className={styles.ProjectsCat}>
         <nav className={styles.navigation}>
@@ -103,7 +103,7 @@ const Projects = () => {
       <div className={styles.Projects}>
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <div
+            <article
               key={project.id}
               style={{
                 backgroundImage: `url(${project.image})`,
@@ -156,13 +156,13 @@ const Projects = () => {
               {/*<div className={styles.Description}>*/}
               {/*    Онлайн гипермаркет. Для компании были разработаны сайт и мобильное приложение и т.д.*/}
               {/*</div>*/}
-            </div>
+            </article>
           ))
         ) : (
           <div>Проекты не найдены</div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

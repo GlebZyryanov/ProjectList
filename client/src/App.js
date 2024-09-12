@@ -8,12 +8,12 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className={styles.Background}>
-      <div className={styles.Container}>
+      <main className={styles.Container}>
         <Header />
         <BreadCrumbs />
         <Projects />
         <FeedbackForm />
-      </div>
+      </main>
       <Footer />
     </div>
   );

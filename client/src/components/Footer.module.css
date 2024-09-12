@@ -1,110 +1,99 @@
 .Footer {
-    margin-top: 5%;
-    padding: 40px 0;
-    background: #313341;
-    color: #fff;
+  margin-top: 5%;
+  padding: 40px 0;
+  background: #313341;
+  color: #fff;
 }
-.SubFooter{
-    max-width: 1240px;
-    padding-left: 17%;
-    padding-right: 17%;
+.SubFooter {
+  max-width: 1240px;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 /* Для больших экранов (1920px) */
 @media (max-width: 1920px) {
-    .SubFooter {
-        max-width: 1240px;
-        padding-left: 17%;
-        padding-right: 17%;
-    }
+  .SubFooter {
+    max-width: 1240px;
+    padding-left: 17%;
+    padding-right: 17%;
+  }
 }
 @media (max-width: 960px) {
-    .SubFooter {
-        max-width: 1240px;
-        padding-left: 7%;
-        padding-right: 7%;
-    }
+  .SubFooter {
+    max-width: 1240px;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 }
 /* Для экранов меньше (1920px) */
 @media (max-width: 768px) {
-    .SubFooter{
+  .SubFooter {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .Container {
+    display: flex;
+    width: 100%;
 
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .Container {
-        display: flex;
-        width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .FooterInfo {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    width: 100%;
 
-        flex-direction: column;
-        align-items: center;
+    /*gap: 50px;*/
+  }
+  .Column {
+  }
 
-    }
-    .FooterInfo{
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        display: flex;
-        flex-direction: row;
-        /*justify-content: space-around;*/
-        width: 100%;
+  .UnderLogo {
+    color: #ffffff;
 
-        /*gap: 50px;*/
-    }
-    .Column {
-
-    }
-
-    .UnderLogo{
-        color: #FFFFFF;
-
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 21.6px;
-        text-align: left;
-
-    }
-
-
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+  }
 }
 
 .Container {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .Column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.UnderLogo{
-    color: #FFFFFF;
+.UnderLogo {
+  color: #ffffff;
 
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: left;
-
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
 }
 
-.FooterInfo{
-margin-left: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-
+.FooterInfo {
+  margin-left: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 p {
-    margin: 0;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: left;
-
-
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
 }

@@ -11,10 +11,10 @@
 
 }
 .Breadcrumbs ul {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-    margin: 0; /* Убираем внешние отступы */
-    display: flex; /* Выстраиваем элементы в строку */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     color: #C4D2E3;
 
 }
@@ -28,6 +28,6 @@
 
 .Breadcrumbs a {
     color: #C4D2E3;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
 }
 

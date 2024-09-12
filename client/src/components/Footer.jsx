@@ -70,7 +70,7 @@ const Footer = () => {
                         </div>
                         <div className={styles.Column}>
                             <p>Блог</p>
-                            <p>Контакты</p>
+                            <p>Вопросы</p>
                         </div>
                     </div>
                 </div>
